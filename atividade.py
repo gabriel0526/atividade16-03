@@ -4,12 +4,13 @@ while True:
     print("\n=== TASK MANAGER v1.0 ===")
     print("1 - criar tarefa")
     print("2 - listar tarefas")
-    print("3 - sair")
+    print("3 - deletar tarefas")
+    print("4 - sair")
     
     opcao = input("\nescolha uma opção: ")
 
-    if opcao not in  ["1", "2", "3"]:
-        print("x opção inválida! Digite 1, 2 ou 3")
+    if opcao not in  ["1", "2", "3", "4"]:
+        print("x opção inválida! Digite 1, 2, 3 ou 4")
 
     if opcao == "1":
         nome = input("nome da tarefa: ")
@@ -28,5 +29,5 @@ while True:
                 print(f"{i}, {tarefas}")
 
     elif opcao == "3":
-        print("ate logo")
-        break
+        indice = input("qual tarefa deletar (numero)? ")
+        if indice.isdigit() and 0 
