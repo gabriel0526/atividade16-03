@@ -30,4 +30,14 @@ while True:
 
     elif opcao == "3":
         indice = input("qual tarefa deletar (numero)? ")
-        if indice.isdigit() and 0 
+        if indice.isdigit() and 0 < int(indice) <= len(tarefas):
+            deletada = tarefas.pop(int(indice) - 1)
+            print(f"tarefa {deletada} deletada")
+        else:
+            print("numero invalido")
+
+    elif opcao == "4":
+        print("ate logo!")
+        break        
+
+
